@@ -70,6 +70,7 @@ module TwelveDays
   def self.complete_song_verse(verse)
     ordinal = fetch_ordinal_and_song_part(verse).keys[0]
     song_verse = join_song_parts_in_verse(verse)
+
     "On the #{ordinal} day of Christmas my true love gave to me: #{song_verse}"
   end
 
